@@ -1,18 +1,14 @@
 from string import Template
+from subprocess import call
+from random import choice
 
-with open("Template.ly") as myfile:
-data ="".join(line.rstrip() for line in myfile)
-
-
-
+data=open("Template.ly").read()
 
 highinstruments = [line.strip() for line in open('highdrums.txt')]
 highrhythms = [line.strip() for line in open('highrhythms.txt')]
 lowinstruments = [line.strip() for line in open('lowdrums.txt')]
-lowrhythms = [line.strip() for line in open('low rhythms.txt')]
+lowrhythms = [line.strip() for line in open('lowrhythms.txt')]
 
-
-from random import choice
 hi_instrument = choice(highinstruments)
 lo_instrument = choice(lowinstruments)
 string = ""
@@ -26,7 +22,8 @@ for i in xrange(4):
 	string = string + lowrhythm.replace('*', lo_instrument) + " "
 lowdrums = ((string + "\n")*10).strip()
 
-song = Template(data)
-song.substitute(HighDrums=highdrums, LowDrums = 'stuff')
+template = Template(data)
+song = template.substitute(HighDrums=highdrums, LowDrums = lowdrums)
 
-print song
+songfile = open('output.ly','w')
+songfile.write(song)
