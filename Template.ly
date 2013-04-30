@@ -1,7 +1,7 @@
 global = {
 \key c \major
 \time 4/4
-\tempo 4=130
+\tempo 4=$Tempo
 \version "2.16.2"
 }
 
@@ -28,38 +28,30 @@ electricbass = \relative c, {
   c,4 c'8. c16 r8 g c4
 }
 
-up = \drummode {
-  \global
-
-$HighDrums
-
-}
-
-low = \drummode {
-  \global
-
-$LowDrums
-
-}
-
-drum1 = {
+highdrums = {
   <<
     \set DrumStaff.instrumentName = #"Drums"
-    \new DrumVoice \up
+    \drummode {
+	\global
+	$HighDrums
+    }
   >>
 }
 
-drum2 = {
+lowdrums = {
   <<
     \set DrumStaff.instrumentName = #"Drums2"
-    \new DrumVoice \low
+    \drummode {
+	\global
+	$LowDrums
+    }
   >>
 }
 
 \score {
 \new StaffGroup <<
-  \new DrumStaff \drum1
-  \new DrumStaff \drum2
+  \new DrumStaff \highdrums
+  \new DrumStaff \lowdrums
   \new Staff \electricbass
 >>
   \layout { }

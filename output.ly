@@ -1,7 +1,7 @@
 global = {
 \key c \major
 \time 4/4
-\tempo 4=130
+\tempo 4=300
 \version "2.16.2"
 }
 
@@ -28,49 +28,36 @@ electricbass = \relative c, {
   c,4 c'8. c16 r8 g c4
 }
 
-up = \drummode {
-  \global
-
-hho8 hho4. hho4 r hho4 hho hho4. hho8 
-hho8 hho4. hho4 r hho4 hho hho4. hho8 
-hho8 hho4. hho4 r hho4 hho hho4. hho8 
-hho8 hho4. hho4 r hho4 hho hho4. hho8 
-hho8 hho4. hho4 r hho4 hho hho4. hho8 
-hho8 hho4. hho4 r hho4 hho hho4. hho8 
-hho8 hho4. hho4 r hho4 hho hho4. hho8 
-hho8 hho4. hho4 r hho4 hho hho4. hho8 
-hho8 hho4. hho4 r hho4 hho hho4. hho8 
-hho8 hho4. hho4 r hho4 hho hho4. hho8
-
-}
-
-low = \drummode {
-  \global
-
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt 
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt 
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt 
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt 
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt 
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt 
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt 
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt 
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt 
-tt8 tt tt4 tt4 tt tt8 tt tt tt r4 tt
-
-}
-
-drumContents = {
+highdrums = {
   <<
     \set DrumStaff.instrumentName = #"Drums"
-    \new DrumVoice \up
-    \new DrumVoice \low
+    \drummode {
+	\global
+	\times 2/3{cymch4 cymch cymch} r4 cymch cymch4. cymch8 r2 cymch8 cymch cymch cymch \times 2/3{cymch4 cymch cymch} cymch8 cymch cymch cymch r4 cymch cymch8 cymch4. cymch4. cymch8 r4 cymch r2 cymch8 cymch4. cymch8 cymch4. cymch8 cymch cymch cymch r4 cymch cymch4. cymch8 cymch4 r cymch4 cymch cymch4 cymch cymch8 cymch4. \times 2/3{cymch4 cymch cymch} cymch4. cymch8 cymch8 cymch4. 
+\times 2/3{cymch4 cymch cymch} r4 cymch cymch4. cymch8 r2 cymch8 cymch cymch cymch \times 2/3{cymch4 cymch cymch} cymch8 cymch cymch cymch r4 cymch cymch8 cymch4. cymch4. cymch8 r4 cymch r2 cymch8 cymch4. cymch8 cymch4. cymch8 cymch cymch cymch r4 cymch cymch4. cymch8 cymch4 r cymch4 cymch cymch4 cymch cymch8 cymch4. \times 2/3{cymch4 cymch cymch} cymch4. cymch8 cymch8 cymch4. 
+\times 2/3{cymch4 cymch cymch} r4 cymch cymch4. cymch8 r2 cymch8 cymch cymch cymch \times 2/3{cymch4 cymch cymch} cymch8 cymch cymch cymch r4 cymch cymch8 cymch4. cymch4. cymch8 r4 cymch r2 cymch8 cymch4. cymch8 cymch4. cymch8 cymch cymch cymch r4 cymch cymch4. cymch8 cymch4 r cymch4 cymch cymch4 cymch cymch8 cymch4. \times 2/3{cymch4 cymch cymch} cymch4. cymch8 cymch8 cymch4. 
+\times 2/3{cymch4 cymch cymch} r4 cymch cymch4. cymch8 r2 cymch8 cymch cymch cymch \times 2/3{cymch4 cymch cymch} cymch8 cymch cymch cymch r4 cymch cymch8 cymch4. cymch4. cymch8 r4 cymch r2 cymch8 cymch4. cymch8 cymch4. cymch8 cymch cymch cymch r4 cymch cymch4. cymch8 cymch4 r cymch4 cymch cymch4 cymch cymch8 cymch4. \times 2/3{cymch4 cymch cymch} cymch4. cymch8 cymch8 cymch4.
+    }
+  >>
+}
+
+lowdrums = {
+  <<
+    \set DrumStaff.instrumentName = #"Drums2"
+    \drummode {
+	\global
+	toml4 toml8 toml8 toml8 toml toml toml toml4 r r4 toml r4 toml toml4 toml8 toml8 toml8 toml toml toml toml4 toml toml2 toml4 toml8 toml8 r4 toml r4 toml toml4 toml8 toml8 toml4 toml8 toml8 toml4 toml8 toml8 toml4 toml toml4 toml r4 toml toml2 toml8 toml toml toml r4 toml toml8 toml toml4 toml4 toml8 toml8 toml8 toml toml4 
+toml4 toml8 toml8 toml8 toml toml toml toml4 r r4 toml r4 toml toml4 toml8 toml8 toml8 toml toml toml toml4 toml toml2 toml4 toml8 toml8 r4 toml r4 toml toml4 toml8 toml8 toml4 toml8 toml8 toml4 toml8 toml8 toml4 toml toml4 toml r4 toml toml2 toml8 toml toml toml r4 toml toml8 toml toml4 toml4 toml8 toml8 toml8 toml toml4 
+toml4 toml8 toml8 toml8 toml toml toml toml4 r r4 toml r4 toml toml4 toml8 toml8 toml8 toml toml toml toml4 toml toml2 toml4 toml8 toml8 r4 toml r4 toml toml4 toml8 toml8 toml4 toml8 toml8 toml4 toml8 toml8 toml4 toml toml4 toml r4 toml toml2 toml8 toml toml toml r4 toml toml8 toml toml4 toml4 toml8 toml8 toml8 toml toml4 
+toml4 toml8 toml8 toml8 toml toml toml toml4 r r4 toml r4 toml toml4 toml8 toml8 toml8 toml toml toml toml4 toml toml2 toml4 toml8 toml8 r4 toml r4 toml toml4 toml8 toml8 toml4 toml8 toml8 toml4 toml8 toml8 toml4 toml toml4 toml r4 toml toml2 toml8 toml toml toml r4 toml toml8 toml toml4 toml4 toml8 toml8 toml8 toml toml4
+    }
   >>
 }
 
 \score {
 \new StaffGroup <<
-  \new DrumStaff \drumContents
+  \new DrumStaff \highdrums
+  \new DrumStaff \lowdrums
   \new Staff \electricbass
 >>
   \layout { }
