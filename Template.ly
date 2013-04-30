@@ -42,17 +42,24 @@ $LowDrums
 
 }
 
-drumContents = {
+drum1 = {
   <<
     \set DrumStaff.instrumentName = #"Drums"
     \new DrumVoice \up
+  >>
+}
+
+drum2 = {
+  <<
+    \set DrumStaff.instrumentName = #"Drums2"
     \new DrumVoice \low
   >>
 }
 
 \score {
 \new StaffGroup <<
-  \new DrumStaff \drumContents
+  \new DrumStaff \drum1
+  \new DrumStaff \drum2
   \new Staff \electricbass
 >>
   \layout { }
