@@ -1,5 +1,5 @@
 instruments = [line.strip() for line in open('highdrums.txt')]
-rhythms = [line.strip() for line in open('rhythms.txt')]
+rhythms = [line.strip() for line in open('highrhythms.txt')]
 from random import choice
 instrument = choice(instruments)
 string = ""
