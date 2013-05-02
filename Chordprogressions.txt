@@ -1,0 +1,31 @@
+c,g29 f20 am9
+c g,am37 f24 c18 dm9
+c g am,f77 g6
+c g f,c48 am19 g21
+c g c,g56 f30
+c g dm,f54 am20 c17
+c f,c34 g28 am14
+c f c,f51 g23 am6
+c f g,c43 am26 f8
+c f am,g66 f11 dm5
+c am,f37 g25 dm12
+c am f,g48 c40
+c am g,f56 c19 dm9
+c am dm,g86 am5
+dm,g22 f17 am14 c13
+dm g,c54 em9 dm9
+dm g c,am38 f25 em6
+dm g em,am78 f11 dm11
+dm g dm,g100
+dm f,c37 g25 am19
+dm f c,g93
+dm f g,c61 am11 f11
+dm f am,g65 dm6 c6
+dm am,g36 c14 f13
+dm am g,f39 dm35 c17
+dm am c,g67 fm11 f11
+dm am f,c71 dm29
+dm c,f29 g29 dm14
+dm c f,g24 dm24 am18
+dm c g,f33 am33 dm33
+dm c dm,c60 em20
