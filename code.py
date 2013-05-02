@@ -31,7 +31,7 @@ def generateChordProgression():
 	for i in xrange(3):
 		index = weighted_choice(chords[prog]['weights'])
 		prog = prog + ' ' + chords[prog]['notes'][index]
-	return prog
+	return re.split(' ',prog)
 
 def generateBars(instrumentFile,rhythmFile,phraseLength,measures):
 	instruments = [line.strip() for line in open(instrumentFile)]
@@ -51,6 +51,7 @@ lowdrums = generateBars("lowdrums.txt","lowrhythms.txt",2,48)
 
 chords= parseChords("Chordprogressions.txt")
 progression = generateChordProgression()
+print progression
 
 template = Template(data)
 song = template.substitute(HighDrums=highdrums, LowDrums = lowdrums, Tempo=randint(80,150))

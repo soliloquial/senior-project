@@ -1,7 +1,7 @@
 global = {
 \key c \major
 \time 4/4
-\tempo 4=111
+\tempo 4=140
 \version "2.16.2"
 }
 
@@ -35,30 +35,30 @@ highdrums = {
     \set DrumStaff.instrumentName = #"Drums"
     \drummode {
 	\global
-	hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc 
-hc4 hc hc4 hc r2 hc4 hc
+	r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
+r4 tamb tamb8 tamb4. r4 tamb r4 tamb
     }
   >>
 }
@@ -68,30 +68,30 @@ lowdrums = {
     \set DrumStaff.instrumentName = #"Drums2"
     \drummode {
 	\global
-	r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
-r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn
+	sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
+sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2
     }
   >>
 }
