@@ -1,7 +1,7 @@
 global = {
 \key c \major
 \time 4/4
-\tempo 4=127
+\tempo 4=111
 \version "2.16.2"
 }
 
@@ -35,30 +35,30 @@ highdrums = {
     \set DrumStaff.instrumentName = #"Drums"
     \drummode {
 	\global
-	agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8 
-agl4 r \times 2/3{agl4 agl agl} r4 agl agl4. agl8
+	hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc 
+hc4 hc hc4 hc r2 hc4 hc
     }
   >>
 }
@@ -68,30 +68,30 @@ lowdrums = {
     \set DrumStaff.instrumentName = #"Drums2"
     \drummode {
 	\global
-	bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda 
-bda8 bda bda4 r4 bda bda4 r bda8 bda bda bda
+	r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn 
+r4 sn sn4 sn sn16 sn sn sn sn4 sn8 sn sn sn
     }
   >>
 }
