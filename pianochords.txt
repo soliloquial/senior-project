@@ -1,0 +1,7 @@
+c <c a g>
+dm <d f a>
+g <g b d>
+f <f a c>
+em <e g b>
+am <a c e>
+fm <f aes c>
