@@ -1,6 +1,5 @@
 hhc
 hho
-cymch
 agh
 agl
 ssh

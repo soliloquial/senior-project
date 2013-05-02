@@ -10,6 +10,7 @@ electricbass = \relative c, {
   \set Staff.instrumentName = #"Electric Bass"
   \set Staff.midiInstrument = #"fretless bass"
   \global
+
   c4\fff c'8. c16 r8 g bes c
   c,4 c'8. c16 r8 g bes4
   c,4 c'8. c16 r8 g bes c
@@ -26,6 +27,7 @@ electricbass = \relative c, {
   c,4 c'8. c16 r8 g c4
   c,4 c'8. c16 r8 g bes c
   c,4 c'8. c16 r8 g c4
+
 }
 
 highdrums = {
