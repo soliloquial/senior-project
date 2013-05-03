@@ -4,6 +4,10 @@ from random import choice, randint, random
 import time
 import re
 
+TOTAL_MEASURES = 48
+CHORD_LENGTH = 2
+PHRASELENGTH = choice([1,2,4])
+
 def weighted_choice(weights):
     totals = []
     running_total = 0
@@ -41,20 +45,35 @@ def generateBars(instrumentFile,rhythmFile,phraseLength,measures):
 	for i in xrange(phraseLength*2):
 		rhythm = choice(rhythms)
 		string = string + rhythm.replace('*', instrument) + " "
-	return ((string + "\n")*(measures//phraseLength)).strip()
+	return ((string + "\n")*(measures//phraseLength - 2)).strip()
 
+def parseCSVDict(filename):
+	list = {}
+	lines = [line.strip() for line in open(filename)]
+	for line in lines:
+		pair = re.split(',',line)
+		list[pair[0]] = pair[1]
+	return list
 
 data=open("Template.ly").read()
 
-highdrums = generateBars("highdrums.txt","highrhythms.txt",2,48)
-lowdrums = generateBars("lowdrums.txt","lowrhythms.txt",2,48)
+highdrums = generateBars("highdrums.txt","highrhythms.txt",2,TOTAL_MEASURES)
+lowdrums = generateBars("lowdrums.txt","lowrhythms.txt",2,TOTAL_MEASURES)
 
-chords= parseChords("Chordprogressions.txt")
+chords= parseChords("chordprogressions.txt")
+pianoChords = parseCSVDict("pianochords.txt")
 progression = generateChordProgression()
-print progression
+piano = ''
+for note in progression:
+	piano = piano + pianoChords[note] + str(CHORD_LENGTH) + ' '
+piano = '\\relative c { ' + piano + '} '
+piano = piano * (TOTAL_MEASURES * CHORD_LENGTH / 4)
 
 template = Template(data)
-song = template.substitute(HighDrums=highdrums, LowDrums = lowdrums, Tempo=randint(80,150))
+song = template.substitute(HighDrums=highdrums, LowDrums = lowdrums, Tempo=randint(80,200), ElectricPiano = piano)
 
 songfile = open('output.ly','w')
 songfile.write(song)
+songfile.close()
+
+call(['lilypond','output.ly'])

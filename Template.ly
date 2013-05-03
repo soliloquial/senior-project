@@ -11,23 +11,14 @@ electricbass = \relative c, {
   \set Staff.midiInstrument = #"fretless bass"
   \global
 
-  c4\fff c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4 
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4 
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4 
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g c4
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g c4
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g c4
+}
 
+piano = \transpose $OriginalKey $NewKey {
+  \clef bass
+  \set Staff.instrumentName = #"Electric Piano"
+  \set Staff.midiInstrument = #"electric piano 2"
+  \global
+  $ElectricPiano
 }
 
 highdrums = {
@@ -35,6 +26,7 @@ highdrums = {
     \set DrumStaff.instrumentName = #"Drums"
     \drummode {
 	\global
+	r1 r1
 	$HighDrums
     }
   >>
@@ -45,6 +37,7 @@ lowdrums = {
     \set DrumStaff.instrumentName = #"Drums2"
     \drummode {
 	\global
+	r1 r1
 	$LowDrums
     }
   >>
@@ -55,6 +48,7 @@ lowdrums = {
   \new DrumStaff \highdrums
   \new DrumStaff \lowdrums
   \new Staff \electricbass
+  \new Staff \piano
 >>
   \layout { }
   \midi { }

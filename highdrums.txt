@@ -1,6 +1,5 @@
 hhc
 hho
-agh
 agl
 ssh
 timh

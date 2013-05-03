@@ -1,7 +1,7 @@
 global = {
 \key c \major
 \time 4/4
-\tempo 4=140
+\tempo 4=138
 \version "2.16.2"
 }
 
@@ -11,23 +11,14 @@ electricbass = \relative c, {
   \set Staff.midiInstrument = #"fretless bass"
   \global
 
-  c4\fff c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4 
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4 
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4 
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g bes4
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g c4
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g c4
-  c,4 c'8. c16 r8 g bes c
-  c,4 c'8. c16 r8 g c4
+}
 
+piano = {
+  \clef bass
+  \set Staff.instrumentName = #"Electric Piano"
+  \set Staff.midiInstrument = #"electric piano 2"
+  \global
+  \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } \relative c { <d f a>2 <g b d>2 <c e g>2 <a c e>2 } 
 }
 
 highdrums = {
@@ -35,30 +26,29 @@ highdrums = {
     \set DrumStaff.instrumentName = #"Drums"
     \drummode {
 	\global
-	r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb 
-r4 tamb tamb8 tamb4. r4 tamb r4 tamb
+	r1 r1
+	hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho 
+hho4 r hho8 hho hho hho hho8 hho hho hho r4 hho
     }
   >>
 }
@@ -68,30 +58,29 @@ lowdrums = {
     \set DrumStaff.instrumentName = #"Drums2"
     \drummode {
 	\global
-	sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2 
-sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2
+	r1 r1
+	bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4 
+bda2 bda16 bda bda bda bda4 bda2 bda8 bda bda4
     }
   >>
 }
@@ -101,6 +90,7 @@ sna16 sna sna sna sna4 sna8 sna sna sna sna2 sna2
   \new DrumStaff \highdrums
   \new DrumStaff \lowdrums
   \new Staff \electricbass
+  \new Staff \piano
 >>
   \layout { }
   \midi { }
