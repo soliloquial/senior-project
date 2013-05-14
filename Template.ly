@@ -13,7 +13,7 @@ electricbass = \relative c, {
 
 }
 
-piano = \transpose $OriginalKey $NewKey {
+piano = \transpose c' $NewKey {
   \clef bass
   \set Staff.instrumentName = #"Electric Piano"
   \set Staff.midiInstrument = #"electric piano 2"

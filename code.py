@@ -7,6 +7,9 @@ import re
 TOTAL_MEASURES = 48
 CHORD_LENGTH = 2
 PHRASELENGTH = choice([1,2,4])
+TEMPO = randint(80,200)
+KEYS = [line.strip() for line in open('keys.txt')]
+NEW_KEY = choice(KEYS)
 
 def weighted_choice(weights):
     totals = []
@@ -45,7 +48,7 @@ def generateBars(instrumentFile,rhythmFile,phraseLength,measures):
 	for i in xrange(phraseLength*2):
 		rhythm = choice(rhythms)
 		string = string + rhythm.replace('*', instrument) + " "
-	return ((string + "\n")*(measures//phraseLength - 2)).strip()
+	return ((string + "\n")*(measures//phraseLength - 1)).strip()
 
 def parseCSVDict(filename):
 	list = {}
@@ -68,9 +71,10 @@ for note in progression:
 	piano = piano + pianoChords[note] + str(CHORD_LENGTH) + ' '
 piano = '\\relative c { ' + piano + '} '
 piano = piano * (TOTAL_MEASURES * CHORD_LENGTH / 4)
+print (TOTAL_MEASURES * CHORD_LENGTH / 4)
 
 template = Template(data)
-song = template.substitute(HighDrums=highdrums, LowDrums = lowdrums, Tempo=randint(80,200), ElectricPiano = piano)
+song = template.substitute(HighDrums=highdrums, LowDrums=lowdrums, Tempo=str(TEMPO),ElectricPiano=piano, NewKey=NEW_KEY)
 
 songfile = open('output.ly','w')
 songfile.write(song)
