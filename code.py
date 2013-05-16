@@ -58,6 +58,10 @@ def parseCSVDict(filename):
 		list[pair[0]] = pair[1]
 	return list
 
+chordinstruments = [line.strip() for line in open('chordinstruments.txt')]
+chordinstrument = choice(chordinstruments)
+print chordinstrument
+
 data=open("Template.ly").read()
 
 highdrums = generateBars("highdrums.txt","highrhythms.txt",2,TOTAL_MEASURES)
@@ -71,10 +75,9 @@ for note in progression:
 	piano = piano + pianoChords[note] + str(CHORD_LENGTH) + ' '
 piano = '\\relative c { ' + piano + '} '
 piano = piano * (TOTAL_MEASURES * CHORD_LENGTH / 4)
-print (TOTAL_MEASURES * CHORD_LENGTH / 4)
 
 template = Template(data)
-song = template.substitute(HighDrums=highdrums, LowDrums=lowdrums, Tempo=str(TEMPO),ElectricPiano=piano, NewKey=NEW_KEY)
+song = template.substitute(HighDrums=highdrums, LowDrums=lowdrums, Tempo=str(TEMPO),ElectricPiano=piano, NewKey=NEW_KEY, ChordInstrument=chordinstrument)
 
 songfile = open('output.ly','w')
 songfile.write(song)

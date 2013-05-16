@@ -16,7 +16,7 @@ electricbass = \relative c, {
 piano = \transpose c' $NewKey {
   \clef bass
   \set Staff.instrumentName = #"Electric Piano"
-  \set Staff.midiInstrument = #"electric piano 2"
+  \set Staff.midiInstrument = #"$ChordInstrument"
   \global
   $ElectricPiano
 }
