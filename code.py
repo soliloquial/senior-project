@@ -3,6 +3,7 @@ from subprocess import call
 from random import choice, randint, random
 import time
 import re
+from collections import defaultdict
 
 TOTAL_MEASURES = 48
 CHORD_LENGTH = 2
@@ -58,15 +59,29 @@ def parseCSVDict(filename):
 		list[pair[0]] = pair[1]
 	return list
 
+def parseMarkov(filename):
+	list = defaultdict(dict)
+	lines = [line.strip() for line in open(filename)]
+	for line in lines:
+		pair = re.split(',',line)
+		notes = pair[0]
+		length = len(notes)
+		key1 = notes[0:length-1]
+		key2 = notes[-1]
+		list[key1][key2] = int(pair[1])
+	return list
+
+
+#Choose chord instrument
 chordinstruments = [line.strip() for line in open('chordinstruments.txt')]
 chordinstrument = choice(chordinstruments)
 print chordinstrument
 
-data=open("Template.ly").read()
-
+#Generate drum parts
 highdrums = generateBars("highdrums.txt","highrhythms.txt",2,TOTAL_MEASURES)
 lowdrums = generateBars("lowdrums.txt","lowrhythms.txt",2,TOTAL_MEASURES)
 
+#Generate chord part
 chords= parseChords("chordprogressions.txt")
 pianoChords = parseCSVDict("pianochords.txt")
 progression = generateChordProgression()
@@ -76,11 +91,39 @@ for note in progression:
 piano = '\\relative c { ' + piano + '} '
 piano = piano * (TOTAL_MEASURES * CHORD_LENGTH / 4)
 
-template = Template(data)
-song = template.substitute(HighDrums=highdrums, LowDrums=lowdrums, Tempo=str(TEMPO),ElectricPiano=piano, NewKey=NEW_KEY, ChordInstrument=chordinstrument)
+#Generate melody
+melodypart = ""
+melody = ""
+unigrams = parseMarkov("unidict.txt")['']
+bigrams = parseMarkov("bidict.txt")
+trigrams = parseMarkov("tridict.txt")
+first = weighted_choice(unigrams.values())
+melody = melody + unigrams.keys()[first]
+second = weighted_choice(bigrams[melody].values())
+melody = melody + bigrams[melody].keys()[second]
+for i in range(190):
+	melodylength = len(melody)
+	prevtwo = melody[melodylength-2:melodylength]
+	next = weighted_choice(trigrams[prevtwo].values())
+	melody = melody + trigrams[prevtwo].keys()[next]
+for char in melody:
+	melodypart = melodypart + '\\relative c\' { ' + char + '4 } '
 
+#Choose melody insrument
+choices = [line.strip() for line in open('melodyinstruments.txt')]
+melodyinstrument = choice(choices)
+print melodyinstrument
+
+#Write data to template string
+data=open("Template.ly").read()
+template = Template(data)
+song = template.substitute(HighDrums=highdrums, LowDrums=lowdrums, Tempo=str(TEMPO),ElectricPiano=piano, NewKey=NEW_KEY, ChordInstrument=chordinstrument, MelodyPart=melodypart, MelodyInstrument=melodyinstrument)
+
+#Write file
 songfile = open('output.ly','w')
 songfile.write(song)
 songfile.close()
 
 call(['lilypond','output.ly'])
+
+print "Done"

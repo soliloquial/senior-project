@@ -21,6 +21,14 @@ piano = \transpose c' $NewKey {
   $ElectricPiano
 }
 
+melodypart = \transpose c' $NewKey {
+  \clef bass
+  \set Staff.instrumentName = #"Electric Piano"
+  \set Staff.midiInstrument = #"$MelodyInstrument"
+  \global
+  $MelodyPart
+}
+
 highdrums = {
   <<
     \set DrumStaff.instrumentName = #"Drums"
@@ -49,6 +57,7 @@ lowdrums = {
   \new DrumStaff \lowdrums
   \new Staff \electricbass
   \new Staff \piano
+  \new Staff \melodypart
 >>
   \layout { }
   \midi { }

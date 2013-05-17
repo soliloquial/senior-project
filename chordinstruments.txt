@@ -1,7 +1,6 @@
 electric piano 1
 electric piano 2
 harmonica
-marimba
 pad 1 (new age)
 pad 3 (polysynth)
 pad 4 (choir)
