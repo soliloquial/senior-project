@@ -126,4 +126,4 @@ songfile.close()
 
 call(['lilypond','output.ly'])
 
-print "Done"
+print "Done."

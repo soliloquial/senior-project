@@ -9,3 +9,4 @@ pad 6 (metallic)
 pad 7 (halo)
 pad 8 (sweep)
 voice oohs
+distorted guitar

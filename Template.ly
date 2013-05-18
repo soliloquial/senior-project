@@ -5,17 +5,9 @@ global = {
 \version "2.16.2"
 }
 
-electricbass = \relative c, {
-  \clef bass
-  \set Staff.instrumentName = #"Electric Bass"
-  \set Staff.midiInstrument = #"fretless bass"
-  \global
-
-}
-
 piano = \transpose c' $NewKey {
   \clef bass
-  \set Staff.instrumentName = #"Electric Piano"
+  \set Staff.instrumentName = #"Chords"
   \set Staff.midiInstrument = #"$ChordInstrument"
   \global
   $ElectricPiano
@@ -23,7 +15,7 @@ piano = \transpose c' $NewKey {
 
 melodypart = \transpose c' $NewKey {
   \clef bass
-  \set Staff.instrumentName = #"Electric Piano"
+  \set Staff.instrumentName = #"Melody"
   \set Staff.midiInstrument = #"$MelodyInstrument"
   \global
   $MelodyPart
@@ -55,7 +47,6 @@ lowdrums = {
 \new StaffGroup <<
   \new DrumStaff \highdrums
   \new DrumStaff \lowdrums
-  \new Staff \electricbass
   \new Staff \piano
   \new Staff \melodypart
 >>
