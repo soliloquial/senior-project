@@ -4,9 +4,7 @@ harmonica
 pad 1 (new age)
 pad 3 (polysynth)
 pad 4 (choir)
-pad 5 (bowed)
 pad 6 (metallic)
 pad 7 (halo)
 pad 8 (sweep)
 voice oohs
-distorted guitar

@@ -11,6 +11,7 @@ PHRASELENGTH = choice([1,2,4])
 TEMPO = randint(80,200)
 KEYS = [line.strip() for line in open('keys.txt')]
 NEW_KEY = choice(KEYS)
+ORDER = 7
 
 def weighted_choice(weights):
     totals = []
@@ -85,6 +86,7 @@ lowdrums = generateBars("lowdrums.txt","lowrhythms.txt",2,TOTAL_MEASURES)
 chords= parseChords("chordprogressions.txt")
 pianoChords = parseCSVDict("pianochords.txt")
 progression = generateChordProgression()
+print progression
 piano = ''
 for note in progression:
 	piano = piano + pianoChords[note] + str(CHORD_LENGTH) + ' '
@@ -94,18 +96,21 @@ piano = piano * (TOTAL_MEASURES * CHORD_LENGTH / 4)
 #Generate melody
 melodypart = ""
 melody = ""
-unigrams = parseMarkov("unidict.txt")['']
-bigrams = parseMarkov("bidict.txt")
-trigrams = parseMarkov("tridict.txt")
-first = weighted_choice(unigrams.values())
-melody = melody + unigrams.keys()[first]
-second = weighted_choice(bigrams[melody].values())
-melody = melody + bigrams[melody].keys()[second]
+grams = {}
+
+for i in range(1, ORDER + 1):
+	grams[i] = parseMarkov("Markov/" + str(i) + "dict.txt")
+
 for i in range(190):
 	melodylength = len(melody)
-	prevtwo = melody[melodylength-2:melodylength]
-	next = weighted_choice(trigrams[prevtwo].values())
-	melody = melody + trigrams[prevtwo].keys()[next]
+	if melodylength<ORDER-1:
+		noteindex = weighted_choice(grams[melodylength+1][melody].values())
+		melody = melody + grams[melodylength+1][melody].keys()[noteindex]
+	else:
+		previousnotes = melody[melodylength-ORDER+1:melodylength]
+		next = weighted_choice(grams[ORDER][previousnotes].values())
+		melody = melody + grams[ORDER][previousnotes].keys()[next]
+
 for char in melody:
 	melodypart = melodypart + '\\relative c\' { ' + char + '4 } '
 
