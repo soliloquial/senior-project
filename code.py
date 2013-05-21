@@ -108,8 +108,12 @@ for i in range(190):
 		melody = melody + grams[melodylength+1][melody].keys()[noteindex]
 	else:
 		previousnotes = melody[melodylength-ORDER+1:melodylength]
-		next = weighted_choice(grams[ORDER][previousnotes].values())
-		melody = melody + grams[ORDER][previousnotes].keys()[next]
+		if previousnotes in grams[ORDER]:
+			next = weighted_choice(grams[ORDER][previousnotes].values())
+			melody = melody + grams[ORDER][previousnotes].keys()[next]
+		else: #Fall back to unigram, to avoid NoneType error
+			noteindex = weighted_choice(grams[1][''].values())
+			melody = melody + grams[1][''].keys()[noteindex]
 
 for char in melody:
 	melodypart = melodypart + '\\relative c\' { ' + char + '4 } '
@@ -128,7 +132,3 @@ song = template.substitute(HighDrums=highdrums, LowDrums=lowdrums, Tempo=str(TEM
 songfile = open('output.ly','w')
 songfile.write(song)
 songfile.close()
-
-call(['lilypond','output.ly'])
-
-print "Done."

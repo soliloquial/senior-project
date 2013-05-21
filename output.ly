@@ -1,24 +1,24 @@
 global = {
 \key c \major
 \time 4/4
-\tempo 4=137
+\tempo 4=113
 \version "2.16.2"
 }
 
-piano = \transpose c' f {
+piano = \transpose c' g {
   \clef bass
   \set Staff.instrumentName = #"Chords"
-  \set Staff.midiInstrument = #"electric piano 1"
+  \set Staff.midiInstrument = #"electric piano 2"
   \global
-  \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } \relative c { <c e g>2 <f a c>2 <g b d>2 <a c e>2 } 
+  \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } \relative c { <d f a>2 <f a c>2 <g b d>2 <c e g>2 } 
 }
 
-melodypart = \transpose c' f {
+melodypart = \transpose c' g {
   \clef bass
   \set Staff.instrumentName = #"Melody"
-  \set Staff.midiInstrument = #"pizzicato strings"
+  \set Staff.midiInstrument = #"guitar harmonics"
   \global
-  \relative c' { f4 } \relative c' { d4 } \relative c' { d4 } \relative c' { c4 } \relative c' { d4 } \relative c' { e4 } \relative c' { d4 } \relative c' { c4 } \relative c' { b4 } \relative c' { a4 } \relative c' { g4 } \relative c' { c4 } \relative c' { a4 } \relative c' { c4 } \relative c' { a4 } \relative c' { a4 } \relative c' { b4 } \relative c' { a4 } \relative c' { b4 } \relative c' { a4 } \relative c' { a4 } \relative c' { f4 } \relative c' { a4 } \relative c' { a4 } \relative c' { f4 } \relative c' { g4 } \relative c' { b4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { d4 } \relative c' { d4 } \relative c' { c4 } \relative c' { d4 } \relative c' { e4 } \relative c' { d4 } \relative c' { a4 } \relative c' { f4 } \relative c' { d4 } \relative c' { f4 } \relative c' { g4 } \relative c' { b4 } \relative c' { b4 } \relative c' { b4 } \relative c' { b4 } \relative c' { g4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { d4 } \relative c' { e4 } \relative c' { a4 } \relative c' { c4 } \relative c' { e4 } \relative c' { a4 } \relative c' { b4 } \relative c' { a4 } \relative c' { g4 } \relative c' { b4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { e4 } \relative c' { e4 } \relative c' { a4 } \relative c' { c4 } \relative c' { b4 } \relative c' { a4 } \relative c' { a4 } \relative c' { f4 } \relative c' { d4 } \relative c' { d4 } \relative c' { d4 } \relative c' { g4 } \relative c' { e4 } \relative c' { c4 } \relative c' { c4 } \relative c' { c4 } \relative c' { e4 } \relative c' { c4 } \relative c' { a4 } \relative c' { e4 } \relative c' { e4 } \relative c' { e4 } \relative c' { d4 } \relative c' { d4 } \relative c' { c4 } \relative c' { a4 } \relative c' { f4 } \relative c' { a4 } \relative c' { c4 } \relative c' { d4 } \relative c' { g4 } \relative c' { f4 } \relative c' { f4 } \relative c' { e4 } \relative c' { a4 } \relative c' { d4 } \relative c' { c4 } \relative c' { d4 } \relative c' { e4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { b4 } \relative c' { a4 } \relative c' { b4 } \relative c' { c4 } \relative c' { e4 } \relative c' { e4 } \relative c' { f4 } \relative c' { e4 } \relative c' { f4 } \relative c' { a4 } \relative c' { a4 } \relative c' { f4 } \relative c' { e4 } \relative c' { c4 } \relative c' { b4 } \relative c' { a4 } \relative c' { b4 } \relative c' { a4 } \relative c' { a4 } \relative c' { c4 } \relative c' { d4 } \relative c' { e4 } \relative c' { e4 } \relative c' { e4 } \relative c' { c4 } \relative c' { d4 } \relative c' { e4 } \relative c' { c4 } \relative c' { a4 } \relative c' { d4 } \relative c' { e4 } \relative c' { f4 } \relative c' { e4 } \relative c' { f4 } \relative c' { g4 } \relative c' { f4 } \relative c' { f4 } \relative c' { d4 } \relative c' { f4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { e4 } \relative c' { a4 } \relative c' { f4 } \relative c' { d4 } \relative c' { g4 } \relative c' { f4 } \relative c' { e4 } \relative c' { c4 } \relative c' { a4 } \relative c' { d4 } \relative c' { f4 } \relative c' { f4 } \relative c' { a4 } \relative c' { a4 } \relative c' { a4 } \relative c' { b4 } \relative c' { b4 } \relative c' { b4 } \relative c' { c4 } \relative c' { d4 } \relative c' { e4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { c4 } \relative c' { g4 } \relative c' { c4 } \relative c' { d4 } \relative c' { e4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { e4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { b4 } 
+  \relative c' { c4 } \relative c' { a4 } \relative c' { a4 } \relative c' { b4 } \relative c' { c4 } \relative c' { d4 } \relative c' { c4 } \relative c' { d4 } \relative c' { d4 } \relative c' { c4 } \relative c' { b4 } \relative c' { b4 } \relative c' { a4 } \relative c' { d4 } \relative c' { g4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { g4 } \relative c' { b4 } \relative c' { c4 } \relative c' { d4 } \relative c' { c4 } \relative c' { d4 } \relative c' { d4 } \relative c' { e4 } \relative c' { d4 } \relative c' { b4 } \relative c' { a4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { e4 } \relative c' { a4 } \relative c' { a4 } \relative c' { e4 } \relative c' { e4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { f4 } \relative c' { e4 } \relative c' { c4 } \relative c' { e4 } \relative c' { f4 } \relative c' { e4 } \relative c' { f4 } \relative c' { a4 } \relative c' { f4 } \relative c' { e4 } \relative c' { e4 } \relative c' { f4 } \relative c' { g4 } \relative c' { a4 } \relative c' { b4 } \relative c' { b4 } \relative c' { b4 } \relative c' { a4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { g4 } \relative c' { e4 } \relative c' { d4 } \relative c' { c4 } \relative c' { d4 } \relative c' { e4 } \relative c' { a4 } \relative c' { e4 } \relative c' { c4 } \relative c' { d4 } \relative c' { e4 } \relative c' { b4 } \relative c' { b4 } \relative c' { e4 } \relative c' { c4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { b4 } \relative c' { a4 } \relative c' { a4 } \relative c' { f4 } \relative c' { c4 } \relative c' { e4 } \relative c' { g4 } \relative c' { b4 } \relative c' { a4 } \relative c' { c4 } \relative c' { e4 } \relative c' { d4 } \relative c' { f4 } \relative c' { b4 } \relative c' { d4 } \relative c' { c4 } \relative c' { e4 } \relative c' { c4 } \relative c' { a4 } \relative c' { b4 } \relative c' { g4 } \relative c' { b4 } \relative c' { a4 } \relative c' { f4 } \relative c' { a4 } \relative c' { g4 } \relative c' { e4 } \relative c' { g4 } \relative c' { f4 } \relative c' { g4 } \relative c' { a4 } \relative c' { e4 } \relative c' { f4 } \relative c' { g4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { c4 } \relative c' { b4 } \relative c' { b4 } \relative c' { g4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { d4 } \relative c' { e4 } \relative c' { d4 } \relative c' { d4 } \relative c' { g4 } \relative c' { g4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { c4 } \relative c' { b4 } \relative c' { a4 } \relative c' { a4 } \relative c' { a4 } \relative c' { f4 } \relative c' { f4 } \relative c' { e4 } \relative c' { f4 } \relative c' { g4 } \relative c' { f4 } \relative c' { e4 } \relative c' { d4 } \relative c' { c4 } \relative c' { b4 } \relative c' { c4 } \relative c' { d4 } \relative c' { d4 } \relative c' { c4 } \relative c' { a4 } \relative c' { a4 } \relative c' { c4 } \relative c' { b4 } \relative c' { g4 } \relative c' { g4 } \relative c' { b4 } \relative c' { a4 } \relative c' { g4 } \relative c' { f4 } \relative c' { f4 } \relative c' { e4 } \relative c' { f4 } \relative c' { g4 } \relative c' { e4 } \relative c' { f4 } \relative c' { g4 } \relative c' { f4 } \relative c' { b4 } \relative c' { c4 } \relative c' { d4 } \relative c' { c4 } \relative c' { b4 } \relative c' { g4 } \relative c' { f4 } \relative c' { d4 } \relative c' { f4 } \relative c' { b4 } \relative c' { b4 } \relative c' { g4 } \relative c' { f4 } \relative c' { b4 } \relative c' { d4 } \relative c' { c4 } \relative c' { b4 } \relative c' { b4 } \relative c' { b4 } 
 }
 
 highdrums = {
@@ -27,29 +27,29 @@ highdrums = {
     \drummode {
 	\global
 	r1 r1
-	ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh 
-ssh4 r ssh4 ssh r4 ssh ssh8 ssh ssh ssh
+	hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r 
+hhc8 hhc hhc hhc hhc4. hhc8 hhc4. hhc8 hhc4 r
     }
   >>
 }
@@ -60,29 +60,29 @@ lowdrums = {
     \drummode {
 	\global
 	r1 r1
-	bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2 
-bd8 bd bd4 bd4 bd bd8 bd bd bd bd2
+	sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4 
+sne2 sne4 sne sne2 sne8 sne sne4
     }
   >>
 }
