@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MusicGen &middot; Senior Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="colorbox.css">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+        height: 500px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">MusicGen</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+				<li><a href="#examples">Example Outputs</a></li>
+                <li><a href="#about">About the Project</a></li>
+                <li><a href="#about-us">About Us</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/img/examples/slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Notes that float your boat.</h1>
+              <p class="lead">The notes produced by our cutting-edge Markov chain technology are sure to increase the buoyancy of your craft.</p>
+              <a class="ajax btn btn-large btn-primary" href="generate.php">Generate song now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/examples/slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption" style="margin-top: 180px">
+              <h1>Sonorous songs.</h1>
+              <p class="lead">Stupendous songs slowly serenade smart, sophisticated souls.</p>
+              <a class="ajax btn btn-large btn-primary" href="generate.php">Generate song now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/examples/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption" style="position:relative;left:40%">
+              <h1>Randomness redesigned.</h1>
+              <p class="lead">Our system makes use of many randomized parameters. Many.</p>
+              <a class="ajax btn btn-large btn-primary" href="generate.php">Generate song now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+	<a name="examples"></a>
+    <div class="container marketing">
+		<h1>Example Outputs</h1>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Dancer in the Morn&rsquo;</h2>
+          <p>Listen to this lush example consisting of a rich electric piano melody and an ethereal synthesized pad! The first example of what our program can do!</p>
+          <p><a class='inline btn' href="#ex1">Listen &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>Drop of Water in the Eve</h2>
+          <p>Listen to this sad elegy lamenting the death of the dancer in the morn&rsquo;. Its seventh-order Markov melody is sure to make your eardrums tremble in ecstasy.</p>
+          <p><a class='inline btn' href="#ex2">Listen &raquo;</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>A Kiss at Midnight</h2>
+          <p>Enjoy the fresh sound of jazz guitars perfectly harmonizing with a sweeping synthesized pad. The slow tempo of this song recalls love lost and love yet to be found.</p>
+          <p><a class='inline btn' href="#ex3">Listen &raquo;</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+	  <hr />
+  	  <a name="about"></a>
+	  <section id="about">
+	  <h1>About the Project</h1>
+	  <p>This is a Python script that randomly generates songs in the <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;ved=0CC8QFjAA&amp;url=http%3A%2F%2Fwww.lilypond.org%2F&amp;ei=fxaUUY-xI8qVygG06IC4DQ&amp;usg=AFQjCNFxs2czfaEuj_rMAQ8rq14rnt1Clg&amp;sig2=A8XmRRWuTa3u4jo9h_9DrQ&amp;bvm=bv.46471029,d.aWc">LilyPond</a> markup language. LilyPond is a simple LaTeX-based markup language that allows for the creation of beautiful sheet music and sonorous MIDI output.
+
+	<p>The script uses a variety of stochastic algorithms to generate both consistently consonant sounds as well as variance in the output. Some of the algorithms we are currently using include third-order Markov chains for chord progressions and simple random choices for rhythms and instrument choices. In the future, we will implement cellular automata and genetic (chromosome-based) algorithms to facilitate the "organized" randomness of the songs.
+
+	<p>Among the features that are common in each piece of music as of now are:
+	<ul>
+		<li><span style="line-height: 15px;">High drum section (timpanis, cymbals, etc.)</span></li>
+		<li>Low drum section (snare drums, among others)</li>
+		<li>Electric piano chord section</li>
+		<li>Melody section</li>
+	</ul>
+	<p>The various randomized parameters include:
+	<ul>
+		<li><span style="line-height: 15px;">Tempo</span></li>
+		<li>Chord progression (based on a third-order Markov chain kindly borrowed from <a href="http://www.hooktheory.com/">HookTheory</a>)</li>
+		<li>Phrase length for drums</li>
+		<li>Chord length for piano</li>
+		<li>Melodies, also based on a Markov chain trained using the <a href="http://www.chezfred.org.uk/freds/music/tunes/index.htm">Nottingham Folk Music Database</a></li>
+	</ul>
+	  </section>
+	  <hr />
+	  <a name="about-us"></a>
+	  <section id="about-us">
+	  <h1>About Us</h1>
+	  <div class="row-fluid">
+		<div class="span4" style="text-align:left"><h3 style="text-align:left">Juan Guzman</h3>Juan started with no knowledge of programming and left with an infinite increase in programming knowhow. He provided many ideas on how to improve the song outputs of the script. He learned that while entertaining and interesting, programming was not for him, though he is glad to have done programming for the experience it offered him.</div>
+		<div class="span4" style="text-align:left"><h3 style="text-align:left">Spencer Weiss</h3>Spencer did most of the coding for the project, writing the script to generate the songs and the website to present the information and the favorites of the output of our work. Of the programming languages used in this project, the one Spencer enjoyed learning the most about was Python, as he had very little experience with it beforehand. This project reinvigorated Spencer's interest in studying computer science in college.</div>
+		<div class="span4" style="text-align:left"><h3 style="text-align:left">Brian Ritchken</h3>Brian provided many of the initial rhythms used in the drum sections of the songs. Living a childhood consisting primarily of music, Brian was able to truly inspire the rest of us. As a result of hearing <em>Dancer in the Morn&rsquo;</em>, Brian then decided to live a life of celibacy&mdash;for he realized the only way to achieve true euphoria and ultimate nirvana in his life was to continue listening to songs produced by <em>MusicGen</em>.</div>
+	  </div>
+	  </section>
+	  <hr />
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Juan, Spencer, and Brian &middot; <a class="inline" href="#privacy">Privacy</a> &middot; <a class="inline" href="#terms">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+	<!-- Hidden content -->
+	<div style='display:none'>
+				<div id='ex1' style='padding:10px; background:#fff;'>
+				<h1>Listen!</h1>
+				<embed src="SavedSongs/output.midi" align="baseline" border="0" controls="smallconsole">
+				</div>
+				<div id='ex2' style='padding:10px; background:#fff;'>
+				<h1>Listen!</h1>
+				<embed src="SavedSongs/thebest.midi" align="baseline" border="0" controls="smallconsole">
+				</div>
+				<div id='ex3' style='padding:10px; background:#fff;'>
+				<h1>Listen!</h1>
+				<embed src="SavedSongs/jazzsweep.midi" align="baseline" border="0" controls="smallconsole">
+				</div>
+				<div id='terms' style='padding:10px; background:#fff;'>
+				<h1>Terms and Conditions</h1>
+				<p>NO WARRANTY
+				<p>THE PROGRAM IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY. IT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+				<p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW THE AUTHOR WILL BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+				</div>
+				<div id='privacy' style='padding:10px; background:#fff;'>
+				<h1>Privacy</h1>
+				<p>We will not sell your private information.
+				</div>
+	</div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="jquery.colorbox-min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel();
+		  $(".inline").colorbox({inline:true, width:"50%"});
+		  $(".ajax").colorbox();
+        })
+      }(window.jQuery)
+    </script>
+  </body>
+</html>

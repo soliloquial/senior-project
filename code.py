@@ -1,9 +1,16 @@
 from string import Template
 from subprocess import call
-from random import choice, randint, random
+from random import choice, randint, random, seed
 import time
 import re
 from collections import defaultdict
+import sys
+
+if len(sys.argv) == 2:
+	randseed = int(sys.argv[1])
+else:
+	randseed = int(round(random()*10**12))
+seed(randseed)
 
 TOTAL_MEASURES = 48
 CHORD_LENGTH = 2
@@ -72,7 +79,6 @@ def parseMarkov(filename):
 		list[key1][key2] = int(pair[1])
 	return list
 
-
 #Choose chord instrument
 chordinstruments = [line.strip() for line in open('chordinstruments.txt')]
 chordinstrument = choice(chordinstruments)
@@ -100,6 +106,9 @@ grams = {}
 
 for i in range(1, ORDER + 1):
 	grams[i] = parseMarkov("Markov/" + str(i) + "dict.txt")
+
+melody = progression[0][0]
+print melody
 
 for i in range(190):
 	melodylength = len(melody)
@@ -132,3 +141,5 @@ song = template.substitute(HighDrums=highdrums, LowDrums=lowdrums, Tempo=str(TEM
 songfile = open('output.ly','w')
 songfile.write(song)
 songfile.close()
+
+print "If you would like to generate this song again, use randseed: %d" % randseed
