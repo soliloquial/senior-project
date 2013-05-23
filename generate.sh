@@ -6,7 +6,7 @@ else
   /usr/local/bin/lilypond output.ly
   cp output.midi www/cache/$1.midi
   cp output.pdf www/cache/$1.pdf
+  rm output.midi
+  rm output.pdf
+  rm output.ly
 fi
-rm output.midi
-rm output.pdf
-rm output.ly
