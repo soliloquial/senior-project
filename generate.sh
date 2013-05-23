@@ -7,3 +7,6 @@ else
   cp output.midi www/cache/$1.midi
   cp output.pdf www/cache/$1.pdf
 fi
+rm output.midi
+rm output.pdf
+rm output.ly
